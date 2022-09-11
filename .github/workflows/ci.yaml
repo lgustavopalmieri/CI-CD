@@ -1,10 +1,13 @@
 name: ci-golang-workflow
-on: [push] #toda vez que eu der um push neste repo esse processo vai rodar
+on:
+  pull_request:
+    branches:
+      - develop
 jobs:
   check-application:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2 #pega os nossos arquivos e baixa numa máquina ubuntu
+      - uses: actions/checkout@v2 
       - uses: actions/setup-go@v2
         with:
           go-version: 1.18
