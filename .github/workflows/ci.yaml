@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: false
-          tags: lgustavopalmieri/CI-CD:latest
+          tags: lgustavopalmieri/ci-cd:latest
