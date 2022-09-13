@@ -2,10 +2,11 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	fmt.Println(soma(10, 10))
+	fmt.Println("Worth!")
 }
 
-func soma(a int, b int)int {
+func soma(a int, b int) int {
 	return a + b
 }
